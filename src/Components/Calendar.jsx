@@ -31,10 +31,9 @@ class CalendarScheduler extends React.Component {
                 }
                 else {
                     if (dateDay === today.getDate() && currentYear === today.getFullYear() && currentMonth === today.getMonth()) {
-                        //here the day of today, need class
-                        console.log(dateDay); //get day today
-                        
+                         children.push(<Table.Cell key={j} id={dateDay} className="todayCalendar">{dateDay}</Table.Cell>) 
                     }
+
                     children.push(<Table.Cell key={j} id={dateDay}>{dateDay}</Table.Cell>)
                     dateDay++;
 
@@ -50,7 +49,6 @@ class CalendarScheduler extends React.Component {
     }
 
     render() {
-        
         const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
         const listDays = daysOfWeek.map((dayName) =>
             <Table.HeaderCell key={dayName.toString()}>{dayName}</Table.HeaderCell>
