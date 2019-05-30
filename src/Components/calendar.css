@@ -1,6 +1,35 @@
+:root {
+    --mountain-meadow: #1eb98a;
+    --green-yellow: #bcf236;
+    --concrete: #f2f2f2;
+    --dove-gray: #616161;
+    --boulder: #777;
+    --emperor: #515151;
+    --nobel: #b7b7b7;
+    --alabaster: #fcfcfc;
+    --white: #fff;
+    --silver: #ccc;
+    --tom-thumb: #2a492f;
+  }
+
 .masterContent{
     padding: 30px;
 }
 .titleCaledar{
     background-color: bisque!important;
 }
+
+.dayOff{
+    background-color: var(--silver);
+}
+
+.box {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  .box.green {
+    background-color: green; 
+  }
