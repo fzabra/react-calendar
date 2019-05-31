@@ -31,10 +31,11 @@ class CalendarScheduler extends React.Component {
                 }
                 else {
                     if (dateDay === today.getDate() && currentYear === today.getFullYear() && currentMonth === today.getMonth()) {
-                         console.log(dateDay)   
+                        children.push(<Table.Cell key={j} id={dateDay} className="box green">{dateDay}</Table.Cell>) 
+                    }else{
+                        children.push(<Table.Cell key={j} id={dateDay} className="green">{dateDay}</Table.Cell>) 
                     }
 
-                    children.push(<Table.Cell key={j} id={dateDay}>{dateDay}</Table.Cell>)
                     dateDay++;
 
                     if(dateDay > lastDayOfMonth){
