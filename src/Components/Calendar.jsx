@@ -31,7 +31,7 @@ class CalendarScheduler extends React.Component {
                 }
                 else {
                     if (dateDay === today.getDate() && currentYear === today.getFullYear() && currentMonth === today.getMonth()) {
-                         children.push(<Table.Cell key={j} id={dateDay} className="todayCalendar">{dateDay}</Table.Cell>) 
+                         console.log(dateDay)   
                     }
 
                     children.push(<Table.Cell key={j} id={dateDay}>{dateDay}</Table.Cell>)
